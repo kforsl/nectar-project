@@ -1,0 +1,476 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DADEE3;
+    color:#222;
+    max-width: 1440px;
+    margin: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    background-color: #DADEE3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: #22222233 2px solid;
+    padding-top: 1rem;
+}
+
+.logoImg{
+    margin: auto auto auto 1rem
+}
+
+.topNav {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: #000 solid 3px;
+}
+
+.topNav a {
+    transition: all .15s ease;
+    padding: 1rem;
+    text-decoration: none;
+    color: #222;
+    font-weight: 700;
+    line-height: 16.34px;
+    opacity: .7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topNav a:hover {
+    color: #000;
+    opacity: 1;
+    text-decoration: underline;
+
+}
+
+.headerIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.headerIcons img {
+    transition: all .15s ease;
+    margin: 1rem;
+    
+}
+
+.headerIcons img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+main {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.chapterHeading {
+    padding: 3rem;
+    text-align: center;
+}
+
+.chapterNumberTxt {
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    line-height: 18.27px;
+
+}
+
+.chapterTitleTxt {
+    margin: .5rem;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 47.25px;
+
+}
+
+.chapterTitleTxt span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 57.2px;
+}
+
+.chapterAuthorText {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 19.07px;
+}
+
+.recipeCardsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr .fr;
+    grid-gap: 1rem;
+    grid-template-areas: "largeCard largeCard largeCard"
+        "smallCard smallCard smallCard";
+}
+
+.recipeCard {
+    display: grid;
+    min-height: 6rem;
+    min-width: 6rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+}
+
+.largeCard {
+    grid-area: largeCard;
+    grid-template-areas: "recipeCardImg recipeCardImg recipeinfoCard";
+}
+
+.largeCard .recipeCardCategoriesTxt {
+    font-style: italic;
+    word-wrap: break-all;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18.27px;
+}
+
+.largeCard .recipeNameTxt {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3%;
+    line-height: 27.24px;
+}
+
+.largeCard .recipeCardDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+}
+
+.largeCard img {
+    grid-area: recipeCardImg;
+    margin: 0;
+}
+
+.smallCard {
+    grid-area: smallCard();
+    max-width: 317px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    grid-template-areas: "recipeCardImg"  "recipeinfoCard";
+}
+
+.smallCard .recipeCardCategoriesTxt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19.07px;
+}
+
+.smallCard .recipeCardDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+}
+
+.yellowBg .recipeCardCategoriesTxt{
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.8px;
+}
+
+.yellowBg .recipeCardDescription {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 31.2px;
+
+}
+
+.recipeinfoCard {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.recipeinfoCard nav {
+    font-size: 2rem;
+    justify-content: flex-end;
+}
+
+.recipeinfoCard nav img {
+    margin-left: 1rem;
+}
+
+
+
+.roundArrowBtn {
+    margin-top: 2rem;
+    border: none;
+    background-color: #ffe350;
+    align-self: flex-end;
+    padding: .8rem .7rem;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+.roundArrowBtn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+
+.allRecipesBtn {
+    background: none;
+    border: #222 solid 2px;
+    color: #222;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    transition: all .15s ease;
+    justify-content: center;
+    margin: 3rem auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16.34px;
+    font-weight: 800;
+}
+
+.allRecipesBtn:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #222;
+}
+
+.recipeCategoriesContainer {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "roundImgCategories roundImgCategories roundImgCategories roundImgCategories";
+}
+
+.recipeCategoriesContainer figure {
+    grid-area: roundImgCategories();
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.roundCategoriesImg {
+    border-radius: 100%;
+    min-height: 100px;
+    min-width: 100px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+}
+
+.roundCategoriesTxt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19.07px;
+    font-weight: 800;
+}
+
+.roundCategoriesDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 20.4px;
+    font-weight: 400;
+}
+
+.quoteContainer {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: ". quoteImg quoteTxt"
+}
+
+.quoteImg {
+    grid-area: quoteImg;
+    position: relative;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, .2);
+}
+
+.quoteImgTxtContainer {
+    position: absolute;
+    top: 3rem;
+    left: -16rem;
+    max-width: 394px;
+}
+
+.quoteImgTxtAuthor {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.quoteImgTxtTitle {
+    margin: 0;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    line-height: 42px;
+    letter-spacing: -8%;
+}
+
+.quoteImgTxtTitle span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    letter-spacing: 4%;
+    line-height: 42%;
+}
+
+.quoteImgTxtAuthorSignature {
+    transform: rotate(-2.1deg);
+    font-family: 'Allura', cursive;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.quoteTxtContainer {
+    grid-area: quoteTxt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto; 
+}
+
+.quoteTxt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.4px;
+}
+
+.quoteTxtContainer a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.jumbotron {
+    padding: 2rem;
+    margin: 2rem 0; 
+    background-image: url(assets/jumbo.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .2);
+}
+
+.jumbotronSmallTxt {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800px;
+    line-height: 19.07px;
+
+}
+.jumbotronBigTxt{
+    max-width: 400px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+    font-style: italic;
+    font-size: 42px;
+    font-weight: 400px;
+    line-height: 42px;
+}
+
+.jumbotronBigTxt span {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700px;
+    line-height: 42px;
+}
+
+.bigLine {
+    width: 10%;
+    line-height: 3px;
+}
+
+
+
+footer {
+    align-self: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.footerNextView {
+    transition: all .15s ease;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16.34px;
+}
+
+.footerNextView:hover {
+    cursor: pointer;
+    opacity: 1;
+    color: #000;
+    text-decoration: underline;
+}
+
+.footerNews {
+    padding: 1rem;
+    transition: all .15s ease;
+    text-decoration: none;
+    font-size: 32px;
+    font-style: italic;
+    font-family: 'EB Garamond', serif;
+    letter-spacing: -8%;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.footerNews:hover {
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline;
+}
+
+
+.yellowTxt {
+    color: #FFE350;
+}
+.yellowBg {
+    background-color: #FFE350;
+    text-align: center;
+
+}
+
+.ratings {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    line-height: 12px;
+}
