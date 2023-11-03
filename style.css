@@ -120,7 +120,7 @@ main {
 .recipeCardsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr .fr;
+    grid-template-rows: 1fr .9fr;
     grid-gap: 1rem;
     grid-template-areas: "largeCard largeCard largeCard"
         "smallCard smallCard smallCard";
@@ -165,7 +165,13 @@ main {
 
 .largeCard img {
     grid-area: recipeCardImg;
+    
     margin: 0;
+}
+
+.largeCard nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .smallCard {
@@ -227,7 +233,7 @@ main {
 
 
 .roundArrowBtn {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     border: none;
     background-color: #ffe350;
     align-self: flex-end;
